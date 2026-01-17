@@ -68,6 +68,45 @@ Finalisation du fichier README.md.
 📬 Soumission
 Envoyez votre livrable avec intitulé MBAESG_EVALUATION_MANAGEMENT_OPERATIONNEL à l'adresse suivante : axel@logbrain.fr
 
+# Installation et Exécution
+
+## Prérequis
+- Python 3.8 ou supérieur
+- pip
+
+## Installation
+1. Clonez ce dépôt :
+   ```
+   git clone https://github.com/DnastyGroup/Projet-de-Groupe-4-Cr-ez-une-Application-Web-Interactive-avec-Git-Streamlit-et-DuckDB.git
+   cd Projet-de-Groupe-4-Cr-ez-une-Application-Web-Interactive-avec-Git-Streamlit-et-DuckDB
+   ```
+
+2. Installez les dépendances :
+   ```
+   pip install -r requirements.txt
+   ```
+
+## Exécution
+Lancez l'application Streamlit :
+```
+streamlit run app.py
+```
+
+L'application sera accessible à l'adresse http://localhost:8501
+
+## Description des Fonctionnalités
+- Téléversement de fichiers CSV contenant des données de ventes
+- Stockage des données dans une base DuckDB
+- Calcul et affichage de 4 KPIs : Ventes Totales, Ventes Moyennes par Transaction, Nombre de Transactions, Région avec les Plus Hautes Ventes
+- 4 visualisations : Évolution des Ventes dans le Temps, Ventes par Région, Top 10 Produits par Ventes, Distribution des Montants de Ventes
+- Filtres dynamiques par date, région et produit
+
+## Répartition des Tâches
+- Membre 1 : Développement de l'interface Streamlit et téléversement de fichiers
+- Membre 2 : Intégration de DuckDB et écriture des requêtes SQL
+- Membre 3 : Création des visualisations et KPIs
+- Membre 4 : Tests, documentation et gestion Git
+
 Jeux de données :
 Chaque groupe se verra attribuer une thématique parmi celles listées ci-dessous, chacune accompagnée d'un jeu de données permettant une analyse approfondie.
 
