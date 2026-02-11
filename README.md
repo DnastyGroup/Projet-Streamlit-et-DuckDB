@@ -299,6 +299,5 @@ Ce projet est développé dans le cadre d'un projet académique MBA ESG.
 
 ---
 
-**Développé avec ❤️ par l'Équipe Groupe 4 - MBA ESG**
+**Développé par l'Équipe Groupe 4 - MBA ESG**
 
-*Dernière mise à jour: Février 2025*
