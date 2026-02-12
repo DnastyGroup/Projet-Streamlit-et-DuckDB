@@ -60,12 +60,18 @@ with st.sidebar:
 
 if uploaded_file is not None:
     try:
+        # --- IMPROVEMENT: PRE-READ SIZE CHECK ---
+        # We check the file size before even trying to read it
+        if uploaded_file.size == 0:
+            st.error("⚠️ The uploaded file is completely empty (0 bytes). Please upload a valid CSV.")
+            st.stop()
+
         # Read CSV
         df = pd.read_csv(uploaded_file)
 
-        # --- IMPROVEMENT 1: EMPTY FILE CHECK ---
+        # --- IMPROVEMENT: DATA CONTENT CHECK ---
         if df.empty:
-            st.error("⚠️ The uploaded file is empty. Please upload a valid CSV dataset.")
+            st.error("⚠️ The CSV file has headers but no data rows. Please upload a valid dataset.")
             st.stop()
 
         # Store original column names
@@ -430,9 +436,14 @@ if uploaded_file is not None:
         # Close DuckDB connection
         con.close()
 
+    except pd.errors.EmptyDataError:
+        st.error("⚠️ EmptyDataError: The file provided has no columns or data to parse.")
+        st.stop()
     except Exception as e:
         st.error(f"❌ Erreur lors du traitement du fichier: {str(e)}")
-        st.exception(e)
+        # Solo mostrar la excepción técnica si es un error desconocido
+        if "score_col" not in str(e): 
+            st.exception(e)
 
 else:
     # Welcome screen when no file is uploaded
