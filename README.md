@@ -183,13 +183,16 @@ Projet-de-Groupe-4/
 └── __pycache__/                      # Fichiers Python compilés
 ```
 
-## 🧪 Phase de Tests et Assurance Qualité (Membre 4)
-J'ai été responsable de la fiabilité et de la qualité de l'application. Mes contributions incluent :
+## 🧪 Phase de Tests et Assurance Qualité (Salimi Mazrag Amina)
+J'ai assuré la stabilité et la fiabilité de l'application via une approche de "stress testing" :
 
-- **Tests Logiques Automatisés :** Création du script `test_logic.py` utilisant DuckDB pour vérifier la précision des requêtes SQL et le calcul des KPIs.
-- **Validation Robuste des Données :** Implémentation de contrôles de sécurité dans `app.py` pour gérer les fichiers CSV vides et vérifier l'intégrité des colonnes avant le traitement.
-- **Amélioration de l'Expérience Utilisateur (UX) :** Ajout d'infobulles (tooltips) explicatives sur chaque KPI pour détailler la logique de calcul à l'utilisateur final.
-- **Gestion du Workflow Git :** Suivi d'une méthodologie professionnelle avec l'utilisation d'une branche dédiée et des commits descriptifs.
+- **Tests Logiques Automatisés :** Création du script `test_logic.py` pour valider les calculs de KPIs via DuckDB.
+- **Gestion des Erreurs Critiques :** 
+    - Implémentation d'une détection préventive des fichiers de 0 octet (`uploaded_file.size`).
+    - Capture spécifique de l'exception `pd.errors.EmptyDataError` pour éviter les crashs de l'interface lors du chargement de fichiers corrompus.
+- **Validation de Structure :** Vérification dynamique de l'intégrité de la structure CSV avant tout traitement DuckDB.
+- **Amélioration UX :** Ajout d'infobulles explicatives sur les KPIs et messages d'erreur clairs en cas de mauvais format de fichier.
+- **Workflow Git :** Gestion complète via une branche dédiée (`feature/tests-y-mejoras`) et Pull Requests.
 
 
 ## 📦 Dépendances
