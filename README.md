@@ -183,6 +183,15 @@ Projet-de-Groupe-4/
 └── __pycache__/                      # Fichiers Python compilés
 ```
 
+## 🧪 Phase de Tests et Assurance Qualité (Membre 4)
+J'ai été responsable de la fiabilité et de la qualité de l'application. Mes contributions incluent :
+
+- **Tests Logiques Automatisés :** Création du script `test_logic.py` utilisant DuckDB pour vérifier la précision des requêtes SQL et le calcul des KPIs.
+- **Validation Robuste des Données :** Implémentation de contrôles de sécurité dans `app.py` pour gérer les fichiers CSV vides et vérifier l'intégrité des colonnes avant le traitement.
+- **Amélioration de l'Expérience Utilisateur (UX) :** Ajout d'infobulles (tooltips) explicatives sur chaque KPI pour détailler la logique de calcul à l'utilisateur final.
+- **Gestion du Workflow Git :** Suivi d'une méthodologie professionnelle avec l'utilisation d'une branche dédiée et des commits descriptifs.
+
+
 ## 📦 Dépendances
 
 ```txt
@@ -202,6 +211,7 @@ statsmodels>=0.14.0        # Analyses statistiques et trendlines
 | **Yassine Kamali** | Intégration DuckDB | • Connexion à DuckDB<br>• Création de tables<br>• Requêtes SQL optimisées |
 | **Membre 3** | Visualisations & KPIs | • 4 graphiques interactifs<br>• Calcul des KPIs<br>• Design des visualisations |
 | **Membre 4** | Filtres & Documentation | • Système de filtres dynamiques<br>• Tests fonctionnels<br>• Documentation (README) |
+| **SALIMI MAZRAG AMINA** | Tests & Qualité | • Script de tests automatisés (test_logic.py) <br> • Validation des données et gestion d'erreurs <br> • Amélioration UX et documentation |
 
 ## 🧪 Guide d'Utilisation
 
